@@ -53,7 +53,7 @@ export default function FormCliente() {
       axios
         .put("http://localhost:8080/api/cliente/" + idCliente, clienteRequest)
         .then((response) => {
-          notifySuccess("Cliente cadastrado com sucesso.");
+          notifySuccess("Cliente alterado com sucesso.");
         })
         .catch((error) => {
           if (error.response.data.errors != undefined) {

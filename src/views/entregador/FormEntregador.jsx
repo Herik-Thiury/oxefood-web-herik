@@ -133,7 +133,7 @@ export default function FormEntregador() {
       axios
         .post("http://localhost:8080/api/entregador", entregadorRequest)
         .then((response) => {
-          notifySuccess("Entregador cadastrado com sucesso.");
+          notifySuccess("Entregador alterado com sucesso.");
         })
         .catch((error) => {
           if (error.response.data.errors != undefined) {

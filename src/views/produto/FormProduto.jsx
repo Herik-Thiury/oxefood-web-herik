@@ -70,7 +70,7 @@ export default function FormProduto() {
       axios
         .post("http://localhost:8080/api/produto", produtoRequest)
         .then((response) => {
-          notifySuccess("Produto cadastrado com sucesso.");
+          notifySuccess("Produto alterado com sucesso.");
         })
         .catch((error) => {
           if (error.response.data.errors != undefined) {

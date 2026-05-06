@@ -4,8 +4,10 @@ import FormEntregador from "./views/entregador/FormEntregador";
 import Rotas from './Rotas';
 import { ToastContainer } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
+import { setupAxiosInterceptors } from './views/util/AuthenticationService';
 
 function App() {
+  setupAxiosInterceptors();
   return (
     <div className="App">
       <ToastContainer />
